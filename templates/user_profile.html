@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>{{ user.username }}'s Profile</h1>
+    <!-- Other profile details -->
+
+    <!--  chat button -->
+    <a href="{% url 'get_or_create_chat_room' user.id %}">
+        <button>Chat</button>
+    </a>
+</body>
+</html>
